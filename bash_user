@@ -1,0 +1,19 @@
+# .bashrc
+
+if [ "$PS1" ]; then
+   export PS1="\[\033[1;32m\]\u\[\033[1;37m\]@\[\033[1;31m\]\h\[\033[1;0m\]:\w\$ "
+fi
+
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+alias cp="cp -rfvp"
+# always print in human readable form
+alias df="df -h"
