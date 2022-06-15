@@ -10,8 +10,34 @@ fi
 
 alias rm='rm -i'
 alias cp='cp -rfvp'
-alias mv='mv -i'
+alias mv='mv -i'alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# some more ls aliases
+alias ll='ls -l'
+alias la='ls -A'
+alias cp='cp -rfvp'
+alias rm='rm -i'
 alias df='df -h'
+# show open ports
+alias ports='netstat -tulanp'
+
+# become root #
+alias root='sudo -i'
+alias su='sudo -i'
+
+# reboot / halt / poweroff
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
+
+alias df='df -h'
+
+
+
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
